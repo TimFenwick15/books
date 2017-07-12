@@ -10,7 +10,7 @@ require('http').get(options, response => {
 
 
 // const options_https = `https://www.goodreads.com/search.xml?key=${process.env.key}&q=Ender%27s+Game`; // book search
-const options_https = `https://www.goodreads.com/shelf/list.xml?key=${process.env.key}&user_id=${user_id}`; // get shelves
+const options_https = `https://www.goodreads.com/shelf/list.json?key=${process.env.key}&user_id=${process.env.user_id}`; // get shelves
 
 require('https').get(options_https, response => {  
     response.setEncoding('utf8');
