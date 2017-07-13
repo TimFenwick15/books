@@ -1,3 +1,8 @@
+const gr = require('./gr-api');
+gr.test();
+//gr.getToReadShelf();
+
+/*
 function getToConsole(url) {
   require('https').get(url, response => {  
       response.setEncoding('utf8');
@@ -54,3 +59,4 @@ parseString(responseData, (err, res) => {
 
 
 // continue this. Handle async, clean code, check in
+*/
