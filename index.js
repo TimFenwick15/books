@@ -1,31 +1,12 @@
 const gr = require('./gr-api');
-gr.test();
-//gr.getToReadShelf();
+gr.toRead();
+
+
+
+
+
 
 /*
-function getToConsole(url) {
-  require('https').get(url, response => {  
-      response.setEncoding('utf8');
-      response.on('data', console.log);
-      response.on('error', console.error);
-  });
-
-}
-
-
-function get(url) {
-  let body = '';
-  require('https').get(url, response => {  
-      response.setEncoding('utf8');
-      response.on('data', data => body += data);
-      response.on('error', console.error);
-  });
-  return body;
-}
-
-const host = 'https://www.goodreads.com/';
-const yearGoal = 35;
-
 // book search
 // const options_https = `${host}search.xml?key=${process.env.key}&q=Ender%27s+Game`;
 
@@ -43,20 +24,4 @@ const options_https = `${host}/review/list?v=2&id=${process.env.user_id}&key=${p
 
 const readThisYearURL =
   `${host}review/list?format=xml&v=2&id=${process.env.user_id}&shelf=read&per_page=200&page=1&sort=date_read&order=a&read_at=${new Date().getFullYear()}&key=${process.env.key}`;
-
-//const readThisYearURL =
-//  `${host}review/list?v=2&id=${process.env.user_id}&key=${process.env.key}&shelf=read`;
-
-
-const responseData = get(readThisYearURL);
-
-const {parseString} = require('xml2js');
-
-parseString(responseData, (err, res) => {
-  console.log(res)
-
-});
-
-
-// continue this. Handle async, clean code, check in
 */
