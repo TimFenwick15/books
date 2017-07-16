@@ -1,5 +1,9 @@
 const gr = require('./gr-api');
-gr.toRead();
+//gr.toRead();
+//console.log (gr.toRead() )
+//console.log( gr.yearGoalProgress() );
+//gr.yearGoalProgress().then( console.log );
+gr.toRead().then( console.log );
 
 
 
